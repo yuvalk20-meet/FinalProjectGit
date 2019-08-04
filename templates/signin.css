@@ -1,0 +1,9 @@
+#div1 {
+  width: 400px;
+  height: 700px;
+  border: 5px solid yellow;
+  padding: 50px;
+  box-sizing: border-box;
+  margin:auto;
+  border-radius: 25px;
+}
