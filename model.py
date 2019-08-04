@@ -16,6 +16,7 @@ class User(Base):
 	neiborhood = Column(String)   #radio
 	password = Column(String)
 	tickets = Column(String)
+	points = Column(Integer)
 
 	def __repr__(self):
 		return ("Username: {}\n").format(self.name)
@@ -33,6 +34,7 @@ class Events(Base):
 	description = Column(String)   #description of the event
 	maximum = Column(Integer)      #Maximum of participant check list of users
 	time = Column(String)
+	image = Column(String)  #Url of icon
 
 class Tickets:
 

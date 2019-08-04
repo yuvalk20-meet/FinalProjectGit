@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post A Post</title>
+	<!-- <link rel="stylesheet" href="CreatePost.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CreatePost.css') }}">
+</head>
+<body>
+<div id="post">
+	<h3>{{name}}</h3>
+	<form action="/post" method="post">
+		 
+		 <input class = "inpu" type="text" name="eventname" placeholder="Event name"> 
+		 <br>
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/863/863170.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/863/863170.svg">
+		 
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/201/201608.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/201/201608.svg">
+
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/924/924463.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/924/924463.svg">
+
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/1587/1587531.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/1587/1587531.svg">
+
+		 <br>
+
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/1998/1998973.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/1998/1998973.svg">
+
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/564/564264.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/564/564264.svg">
+
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/123/123500.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/123/123500.svg">
+
+		 <input class = "inpu" type="radio" name="event" value="https://image.flaticon.com/icons/svg/803/803212.svg" checked><img class="imges" src="https://image.flaticon.com/icons/svg/803/803212.svg">
+		 
+		 <br>
+		 <input type="text" name="location" placeholder="Location">
+		 <br>
+		 <input type="text" name="time" placeholder="Time">
+		 <br>
+		 <input type="text" name="max" placeholder="Maximum Of Members">
+		 <br>
+		 <br>
+		 <textarea rows = "5" cols = "60" name = "description">
+            Enter Description here...
+         </textarea><br>
+		 <input type="submit" value="Submit">
+
+	</form>
+</div>
+
+</body>
+</html>
