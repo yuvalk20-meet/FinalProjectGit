@@ -17,15 +17,12 @@ class User(Base):
 	neiborhood = Column(String)   #radio
 	password_hash = Column(String)
 	tickets = Column(String)
-    points=Column(Integer)
-    image=Column(String)
-
-
+	points=Column(Integer)
+    
 	def hash_password(self, password):
-        self.password_hash = pwd_security.encrypt(password)
-    def verify_password(self, password):
-        return pwd_security.verify(password, self.password_hash)
-
+		self.password_hash = pwd_security.encrypt(password)
+	def verify_password(self, password):
+		return pwd_security.verify(password, self.password_hash)
 	def __repr__(self):
 		return ("Username: {}\n").format(self.name)
 
