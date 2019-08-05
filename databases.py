@@ -28,11 +28,7 @@ def add_points(user_id):
 	user.points += 10
 
 def query_all():
-	allpost = session.query(
-      Event).all()
-
-
-
+	return session.query(Event).all()
 
 def check_username(username):
 
