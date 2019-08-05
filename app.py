@@ -15,7 +15,7 @@ def home_page():
 def Create_post():
 	username = login_session['name']
 	if request.method == 'GET':
-		return render_template("Createpost.html",name=username, user_id = 0, point = 10) 
+		return render_template("Createpost.html",username=username) 
 	else:
 		
 
