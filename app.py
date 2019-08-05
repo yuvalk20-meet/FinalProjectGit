@@ -37,7 +37,7 @@ def login():
 		login_session['logged_in'] = True
 		return render_template("Createpost.html")
 	else:
-		pass## RENDER THE NECCESSARY PAGE##
+		pass
 
    
       
