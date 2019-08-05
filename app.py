@@ -1,5 +1,6 @@
 from UserDB import *
-from flask import Flask, render_template, request
+ 
+from flask import Flask,render_template, request
 from flask import session as login_session
 
 app = Flask(__name__)
@@ -46,6 +47,15 @@ def signin():
 		return render_template('signin.html')
 
 	else:
+		name=request.form['userName']
+		password=reqest.form['password']
+		age=request.form['age']
+		phoneNumber=request.form['phoneNumber']
+		gender=request.form['gender']
+		neiborhood=request.form['neiborhood']
+		addUser(name,password,age,phoneNumber,gender,neiborhood)
+		return render_template('login.html')
+
 		pass
 if __name__ == '__main__':
 	app.run(debug = True)
