@@ -9,6 +9,7 @@ app.config['SECRET_KEY'] = ' you-will-never-guess'
 @app.route('/', methods=['GET', 'POST'])
 def home_page():
 	posts = query_all()
+	posts = posts[::-1]
 	return render_template("HomePage.html", posts = posts )
 
 @app.route('/post', methods=['GET', 'POST'])
@@ -33,7 +34,9 @@ def Create_post():
        User).filter_by(
        name=username).first()
 		add_points(user_ob.user_id)
-		return render_template("Createpost.html", name = username, event = event)
+		posts = query_all()
+		posts = posts[::-1]
+		return render_template("HomePage.html", name = username, event = event, posts = posts)
        
  
 ## LOGIN ROUTES###
@@ -47,6 +50,7 @@ def login():
 		print(user.name)
 		login_session['logged_in'] = True
 		posts = query_all()
+		posts = posts[::-1]
 		return render_template("HomePage.html", posts = posts)
 	else:
 		return render_template("")
