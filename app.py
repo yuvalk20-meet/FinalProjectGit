@@ -1,6 +1,6 @@
-from UserDB import *
- 
-from flask import Flask,render_template, request
+
+from databases import *
+from flask import Flask, render_template, request
 from flask import session as login_session
 
 app = Flask(__name__)
@@ -8,13 +8,17 @@ app.config['SECRET_KEY'] = ' you-will-never-guess'
 
 @app.route('/', methods=['GET', 'POST'])
 def home_page():
-	return render_template("HomePage.html")
+	posts = query_all()
+	return render_template("HomePage.html", posts = posts )
 
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
+	username = login_session['name']
 	if request.method == 'GET':
-		return render_template("Createpost.html",name="YUVAL", user_id = 0, point = 10) 
+		return render_template("Createpost.html",name=username, user_id = 0, point = 10) 
 	else:
+		
+
 		event = request.form['eventname']
 		des = request.form['description']
 		loc = request.form['location']
@@ -22,7 +26,10 @@ def Create_post():
 		maxi = request.form['max']
 
 		image = request.form['event']
-		add_event("Yuval", image, des, time, loc, maxi)
+		add_event(username, image, des, time, loc, maxi)
+		user_ob = session.query(
+       Student).filter_by(
+       name=name).first()
 		add_points()
 		return render_template("Createpost.html", name = name, event = event)
        
@@ -36,9 +43,10 @@ def login():
 	if user != None and user.verify_password(request.form["password"]):
 		login_session['name'] = user.username
 		login_session['logged_in'] = True
-		return render_template("Createpost.html")
+		return render_template("HomePage.html")
 	else:
-		pass
+		return render_template("")
+
 
 
 @app.route('/signin',methods=['POST','GET'])
@@ -48,14 +56,15 @@ def signin():
 
 	else:
 		name=request.form['userName']
-		password=reqest.form['password']
+		password=request.form['password']
 		age=request.form['age']
 		phoneNumber=request.form['phoneNumber']
 		gender=request.form['gender']
 		neiborhood=request.form['neiborhood']
 		addUser(name,password,age,phoneNumber,gender,neiborhood)
-		return render_template('login.html')
+		print("Added User")
+		return render_template("login.html")
 
-		pass
+		
 if __name__ == '__main__':
 	app.run(debug = True)

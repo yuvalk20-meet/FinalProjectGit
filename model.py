@@ -2,6 +2,8 @@ from sqlalchemy import Column, Integer, String, Boolean, PickleType
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy import create_engine
+from flask_login import UserMixin
+from passlib.apps import custom_app_context as pwd_security
 
 Base = declarative_base()
 
@@ -14,14 +16,18 @@ class User(Base):
 	phone_number = Column(Integer)
 	gender = Column(String)   #radio
 	neiborhood = Column(String)   #radio
-	password = Column(String)
 	tickets = Column(String)
 	points = Column(Integer)
+	password_hash = Column(String)
 
 	def __repr__(self):
 		return ("Username: {}\n").format(self.name)
+	def hash_password(self, password):
+		self.password_hash = pwd_security.encrypt(password)
+	def verify_password(self, password):
+		return pwd_security.verify(password, self.password_hash)
 
-class Events(Base):
+class Event(Base):
 
 	__tablename__ = 'events'
 	event_id = Column(Integer, primary_key = True)
