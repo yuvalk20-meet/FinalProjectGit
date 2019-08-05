@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='login.css') }}">
 
 	<title>Login</title>
  
 </head>
 <body>
+<div id="box">
+	<h1>Log In</h1>
 
     <form action="/login" method="POST">
 
@@ -15,7 +18,8 @@
             </br><br>
         <input type="submit" value="Login">
             </br>
-    </form>
+	</form>
+</div>
 
 
     
