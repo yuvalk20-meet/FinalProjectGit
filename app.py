@@ -13,9 +13,12 @@ def home_page():
 
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
+	username = login_session['name']
 	if request.method == 'GET':
-		return render_template("Createpost.html",name="YUVAL", user_id = 0, point = 10) 
+		return render_template("Createpost.html",name=username, user_id = 0, point = 10) 
 	else:
+		
+
 		event = request.form['eventname']
 		des = request.form['description']
 		loc = request.form['location']
@@ -23,7 +26,10 @@ def Create_post():
 		maxi = request.form['max']
 
 		image = request.form['event']
-		add_event("Yuval", image, des, time, loc, maxi)
+		add_event(username, image, des, time, loc, maxi)
+		user_ob = session.query(
+       Student).filter_by(
+       name=name).first()
 		add_points()
 		return render_template("Createpost.html", name = name, event = event)
        
@@ -37,9 +43,10 @@ def login():
 	if user != None and user.verify_password(request.form["password"]):
 		login_session['name'] = user.username
 		login_session['logged_in'] = True
-		return render_template("Createpost.html")
+		return render_template("HomePage.html")
 	else:
-		pass
+		return render_template("")
+
 
 
 @app.route('/signin',methods=['POST','GET'])
@@ -48,6 +55,16 @@ def signin():
 		return render_template('signin.html')
 
 	else:
-		pass
+		name=request.form['userName']
+		password=request.form['password']
+		age=request.form['age']
+		phoneNumber=request.form['phoneNumber']
+		gender=request.form['gender']
+		neiborhood=request.form['neiborhood']
+		addUser(name,password,age,phoneNumber,gender,neiborhood)
+		print("Added User")
+		return render_template("login.html")
+
+		
 if __name__ == '__main__':
 	app.run(debug = True)

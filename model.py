@@ -2,6 +2,8 @@ from sqlalchemy import Column, Integer, String, Boolean, PickleType
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy import create_engine
+from flask_login import UserMixin
+from passlib.apps import custom_app_context as pwd_security
 
 Base = declarative_base()
 
@@ -20,9 +22,6 @@ class User(Base):
 
 	def __repr__(self):
 		return ("Username: {}\n").format(self.name)
-
-	
-    
 	def hash_password(self, password):
 		self.password_hash = pwd_security.encrypt(password)
 	def verify_password(self, password):

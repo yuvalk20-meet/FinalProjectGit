@@ -1,4 +1,4 @@
-from model import Base, Event
+from model import *
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -40,9 +40,9 @@ def check_username(username):
 
 def addUser(username,password,age,number,gender,niborhood):
 
-    user=User(name=username,password_hash=password,phone_number=number,gender=gender,neiborhood=niborhood)
-    user.password_hash(password)
+    user=User(name=username,phone_number=number,gender=gender,neiborhood=niborhood)
+    print(user)
+    user.hash_password(password)
  
     session.add(user)
     session.commit()
-
