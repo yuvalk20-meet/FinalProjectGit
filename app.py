@@ -1,4 +1,5 @@
-from UserDB import *
+
+from databases import *
 from flask import Flask, render_template, request
 from flask import session as login_session
 
@@ -7,7 +8,8 @@ app.config['SECRET_KEY'] = ' you-will-never-guess'
 
 @app.route('/', methods=['GET', 'POST'])
 def home_page():
-	return render_template("HomePage.html")
+	posts = query_all()
+	return render_template("HomePage.html", posts = posts )
 
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
