@@ -39,9 +39,9 @@ def Create_post():
 def login():
 	if request.method == 'GET':
 		return render_template('login.html')
-	user = check_username(request.form['username'])
+	user = check_username(request.form['name'])
 	if user != None and user.verify_password(request.form["password"]):
-		login_session['name'] = user.username
+		login_session['name'] = user.name
 		login_session['logged_in'] = True
 		return render_template("HomePage.html")
 	else:
@@ -49,10 +49,10 @@ def login():
 
 
 
-@app.route('/signin',methods=['POST','GET'])
-def signin():
+@app.route('/signup',methods=['POST','GET'])
+def signup():
 	if request.method=='GET':
-		return render_template('signin.html')
+		return render_template('signup.html')
 
 	else:
 		name=request.form['userName']
