@@ -1,8 +1,8 @@
-
 <!doctype html>
 
 <html lang="en-US" >
   <head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='HomePage.css')}}">
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -70,15 +70,21 @@
           </button>
         
                   <a class="logo" href="https://www.venn.city/">
-            <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/logo.svg" alt="logo" /></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/logo.svg" alt="logo" />
+            <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/logo.svg" alt="logo" /></noscript><img class="lazyload" src='venncitylogo.svg' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/logo.svg" alt="logo" />
           </a>
         
         <div class="header__main">
-                      <nav class="nav nav-main">
+          <nav class="nav nav-main">
 
-              <div class="menu-header-menu-container"><ul id="menu-header-menu" class="menu"><li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192"><a href="#">Create</a>
+              <div class="menu-header-menu-container">
+                <ul id="menu-header-menu" class="menu">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192"><a href="#">log out</a>
+                  </a>
+                  <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192"><a href="#">Create</a>
+                    </a>
 
-</li>
+
+                    </li>
 <li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="https://www.venn.city/about/">About</a></li>
 </ul></div>
             </nav><!-- /.nav-main -->
@@ -105,7 +111,7 @@
                               </div><!-- /.header__main -->
 
         
-
+hello {{name}}, you have {{points}} points!
 	<a href="#contact-us" class="btn btn-green header__btn">
 		Get in Touch
 	</a>
@@ -115,121 +121,132 @@
     </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 </header><!-- /.header -->
-    
+
+<div id="allcontent">
+  <div id = backimg>
+    <img class="layers" src="../static/Images/layer1.png">
+    <img class="layers" src="../static/Images/layer2.png">
+    <img class="layers" src="../static/Images/layer3.png"> 
+  </div>
+
+  <div id="content">
+    content
+  </div>
 
 
-content
 
 
+</div>
 
-            <footer class="footer">
-	<div class="container-fluid d-none d-md-block">
-		<div class="row no-gutters footer__inner">
-			<div class="col-md-9 col-lg-8">
 
-				
-					<nav class="nav nav-footer">
-						<ul>
-															<li>
-									<a>Locations</a><ul id="menu-locations" class="sub-menu"><li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://www.venn.city/bushwick/">Brooklyn</a></li>
+<footer class="footer">
+  <div class="container-fluid d-none d-md-block">
+    <div class="row no-gutters footer__inner">
+      <div class="col-md-9 col-lg-8">
+
+        
+          <nav class="nav nav-footer">
+            <ul>
+                              <li>
+                  <a>Locations</a><ul id="menu-locations" class="sub-menu"><li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://www.venn.city/bushwick/">Brooklyn</a></li>
 <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a target="_blank" rel="noopener noreferrer" href="https://de.venn.city/">Berlin</a></li>
 <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="https://il.venn.city/">Tel Aviv</a></li>
-</ul>								</li>
-															<li>
-									<a>Get In Touch</a><ul id="menu-get-in-touch" class="sub-menu"><li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#contact-us">Contact Us</a></li>
+</ul>               </li>
+                              <li>
+                  <a>Get In Touch</a><ul id="menu-get-in-touch" class="sub-menu"><li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#contact-us">Contact Us</a></li>
 <li id="menu-item-133" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-133"><a target="_blank" rel="noopener noreferrer" href="https://boards.greenhouse.io/venn">Work With Us</a></li>
-</ul>								</li>
-															<li>
-									<a>About</a><ul id="menu-about" class="sub-menu"><li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://www.venn.city/about/">Our Story</a></li>
+</ul>               </li>
+                              <li>
+                  <a>About</a><ul id="menu-about" class="sub-menu"><li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://www.venn.city/about/">Our Story</a></li>
 <li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127"><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1rTSUBP7HVPVtBzRJ-z7S7LW0ZKnQXRCt/view?usp=sharing">Impact Report</a></li>
 <li id="menu-item-128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-128"><a target="_blank" rel="noopener noreferrer" href="http://online.fliphtml5.com/wdwx/qcok/">Venn Vision Book</a></li>
-</ul>								</li>
-													</ul>
-					</nav><!-- /.nav-footer -->
-							</div><!-- /.col-md-9 col-lg-8 -->
+</ul>               </li>
+                          </ul>
+          </nav><!-- /.nav-footer -->
+              </div><!-- /.col-md-9 col-lg-8 -->
 
-							<div class="col-md-3 col-lg-4">
-					<div class="socials socials-footer">
-						<ul>
-					<li>
-				<a href="https://il.linkedin.com/company/venn-city" target="_blank">
-					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin">
-				</a>
-			</li>
-					<li>
-				<a href="https://www.facebook.com/vennbrooklyn/" target="_blank">
-					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook">
-				</a>
-			</li>
-					<li>
-				<a href="https://www.instagram.com/venn.bushwick/" target="_blank">
-					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram">
-				</a>
-			</li>
-			</ul>
-					</div><!-- /.socials socials-footer -->
-				</div><!-- /.col-md-3 col-lg-4 -->
-					</div><!-- /.row -->
-	</div><!-- /.container-fluid -->
+              <div class="col-md-3 col-lg-4">
+          <div class="socials socials-footer">
+            <ul>
+          <li>
+        <a href="https://il.linkedin.com/company/venn-city" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.facebook.com/vennbrooklyn/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.instagram.com/venn.bushwick/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram">
+        </a>
+      </li>
+      </ul>
+          </div><!-- /.socials socials-footer -->
+        </div><!-- /.col-md-3 col-lg-4 -->
+          </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
 
-	<div class="footer__mobile d-block d-md-none">
-		<div class="container-fluid">
-			<div class="row">
-									<div class="col-6">
-						<nav class="nav nav-footer">
-							<ul>
-																	<li>
-										<a>Locations</a><ul id="menu-locations-1" class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://www.venn.city/bushwick/">Brooklyn</a></li>
+  <div class="footer__mobile d-block d-md-none">
+    <div class="container-fluid">
+      <div class="row">
+                  <div class="col-6">
+            <nav class="nav nav-footer">
+              <ul>
+                                  <li>
+                    <a>Locations</a><ul id="menu-locations-1" class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://www.venn.city/bushwick/">Brooklyn</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a target="_blank" rel="noopener noreferrer" href="https://de.venn.city/">Berlin</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="https://il.venn.city/">Tel Aviv</a></li>
-</ul>									</li>
+</ul>                 </li>
 
-																										<li>
-										<a>Get In Touch</a><ul id="menu-get-in-touch-1" class="sub-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#contact-us">Contact Us</a></li>
+                                                    <li>
+                    <a>Get In Touch</a><ul id="menu-get-in-touch-1" class="sub-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#contact-us">Contact Us</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-133"><a target="_blank" rel="noopener noreferrer" href="https://boards.greenhouse.io/venn">Work With Us</a></li>
-</ul>									</li>
+</ul>                 </li>
 
-																			</ul>
-										</nav><!-- /.nav-footer -->
-										</div><!-- /.col-6 -->
-										<div class="col-6">
-										<nav class="nav nav-footer">
-										<ul>
-																										<li>
-										<a>About</a><ul id="menu-about-1" class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://www.venn.city/about/">Our Story</a></li>
+                                      </ul>
+                    </nav><!-- /.nav-footer -->
+                    </div><!-- /.col-6 -->
+                    <div class="col-6">
+                    <nav class="nav nav-footer">
+                    <ul>
+                                                    <li>
+                    <a>About</a><ul id="menu-about-1" class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://www.venn.city/about/">Our Story</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127"><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1rTSUBP7HVPVtBzRJ-z7S7LW0ZKnQXRCt/view?usp=sharing">Impact Report</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-128"><a target="_blank" rel="noopener noreferrer" href="http://online.fliphtml5.com/wdwx/qcok/">Venn Vision Book</a></li>
-</ul>									</li>
+</ul>                 </li>
 
-																								</ul>
-						</nav><!-- /.nav nav-footer -->
+                                                </ul>
+            </nav><!-- /.nav nav-footer -->
 
-													<div class="socials socials-footer">
-								<ul>
-					<li>
-				<a href="https://il.linkedin.com/company/venn-city" target="_blank">
-					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin">
-				</a>
-			</li>
-					<li>
-				<a href="https://www.facebook.com/vennbrooklyn/" target="_blank">
-					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook">
-				</a>
-			</li>
-					<li>
-				<a href="https://www.instagram.com/venn.bushwick/" target="_blank">
-					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram">
-				</a>
-			</li>
-			</ul>
-							</div><!-- /.socials socials-footer -->
-											</div><!-- /.col-6 -->
-							</div><!-- /.row -->
-		</div><!-- /.container-fluid -->
-	</div><!-- /.footer__mobile -->
+                          <div class="socials socials-footer">
+                <ul>
+          <li>
+        <a href="https://il.linkedin.com/company/venn-city" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.facebook.com/vennbrooklyn/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.instagram.com/venn.bushwick/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram">
+        </a>
+      </li>
+      </ul>
+              </div><!-- /.socials socials-footer -->
+                      </div><!-- /.col-6 -->
+              </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div><!-- /.footer__mobile -->
 </footer><!-- /.footer -->
 
-			<div id="book-a-tour" class="zoom-anim-dialog mfp-hide popup-apply">
+      <div id="book-a-tour" class="zoom-anim-dialog mfp-hide popup-apply">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -255,7 +272,7 @@ onFormSubmit: function ($form) {
 
   </div><!-- /.shell -->
 
-</div><!-- /#test-popup -->			<div id="contact-us" class="zoom-anim-dialog mfp-hide popup-apply">
+</div><!-- /#test-popup -->     <div id="contact-us" class="zoom-anim-dialog mfp-hide popup-apply">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -282,7 +299,7 @@ onFormSubmit: function ($form) {
 
   </div><!-- /.shell -->
 
-</div><!-- /#test-popup -->			<div id="join-us" class="zoom-anim-dialog mfp-hide popup-apply">
+</div><!-- /#test-popup -->     <div id="join-us" class="zoom-anim-dialog mfp-hide popup-apply">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -308,7 +325,7 @@ onFormSubmit: function ($form) {
 
   </div><!-- /.shell -->
 
-</div><!-- /#test-popup -->	      <noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src='https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script><script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyApF3C8L177YJW7OoRTzPcksTEKaOgbPSA&#038;ver=5.2.2'></script>
+</div><!-- /#test-popup -->       <noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src='https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script><script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyApF3C8L177YJW7OoRTzPcksTEKaOgbPSA&#038;ver=5.2.2'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var themeGlobal = {"popup_ids":["book-a-tour","contact-us","join-us"],"resources_path":"https:\/\/www.venn.city\/wp-content\/themes\/venn\/resources\/"};
@@ -318,4 +335,4 @@ var themeGlobal = {"popup_ids":["book-a-tour","contact-us","join-us"],"resources
 
     </div><!-- /.wrapper -->
   <script type="text/javascript" defer src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_1dd49251504fff73e97674f941b5d847.js"></script><script data-cfasync='false'>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){function e(){t.media=a}var a=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script></body>
-</html>
+</html>    

@@ -7,7 +7,7 @@ app.config['SECRET_KEY'] = ' you-will-never-guess'
 
 @app.route('/', methods=['GET', 'POST'])
 def home_page():
-	return "<a href='/post'>create</a>"
+	return render_template("HomePage.html")
 
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
@@ -46,7 +46,6 @@ def signin():
 		return render_template('signin.html')
 
 	else:
-		
-
+		pass
 if __name__ == '__main__':
-   app.run(debug = True)
+	app.run(debug = True)

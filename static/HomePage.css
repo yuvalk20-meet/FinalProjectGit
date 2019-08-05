@@ -1,0 +1,17 @@
+.layers {
+	position: absolute;
+	width:100%;
+	z-index:-1;
+}
+
+}
+.footer {
+	position: relative;
+}
+#backimg{
+	z-index: -5;
+}
+#content{
+	position: absolute;
+	z-index: 1;
+}
