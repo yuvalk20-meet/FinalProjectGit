@@ -28,9 +28,9 @@ def Create_post():
 		image = request.form['event']
 		add_event(username, image, des, time, loc, maxi)
 		user_ob = session.query(
-       Student).filter_by(
+       User).filter_by(
        name=name).first()
-		add_points()
+		add_points(user_ob.user_id)
 		return render_template("Createpost.html", name = name, event = event)
        
  
