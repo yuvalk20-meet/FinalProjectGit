@@ -30,7 +30,7 @@ def Create_post():
 @app.route('/login', methods=['POST', 'GET'])
 def login():
 	if request.method == 'GET':
-		return render_template("login.html")
+		return render_template('login.html')
 	user = check_username(request.form['username'])
 	if user != None and user.verify_password(request.form["password"]):
 		login_session['name'] = user.username
@@ -39,8 +39,14 @@ def login():
 	else:
 		pass
 
-   
-      
+
+@app.route('/signin',methods=['POST','GET'])
+def signin():
+	if request.method=='GET':
+		return render_template('signin.html')
+
+	else:
+		
 
 if __name__ == '__main__':
    app.run(debug = True)
