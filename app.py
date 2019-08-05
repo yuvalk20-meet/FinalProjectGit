@@ -13,7 +13,9 @@ def home_page():
 
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
+	
 	username = login_session['name']
+	
 	if request.method == 'GET':
 		return render_template("Createpost.html",username=username) 
 	else:
@@ -43,7 +45,8 @@ def login():
 	if user != None and user.verify_password(request.form["password"]):
 		login_session['name'] = user.name
 		login_session['logged_in'] = True
-		return render_template("HomePage.html")
+		posts = query_all()
+		return render_template("HomePage.html", posts = posts)
 	else:
 		return render_template("")
 

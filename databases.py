@@ -21,6 +21,7 @@ def add_event(name, icon, des, time, loc, maxi):
 	session.add(eve)
 	session.commit()
 
+
 def add_points(user_id):
 	user = session.query(
        User).filter_by(
