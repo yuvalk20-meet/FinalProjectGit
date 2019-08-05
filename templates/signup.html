@@ -3,8 +3,6 @@
 <head>
 
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='signup.css')}}">
-
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='HomePage.css')}}">
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -54,10 +52,15 @@
 <link rel='shortlink' href='https://www.venn.city/' />
 <link rel="alternate" type="application/json+oembed" href="https://www.venn.city/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.venn.city%2F" />
 <link rel="alternate" type="text/xml+oembed" href="https://www.venn.city/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.venn.city%2F&#038;format=xml" />
-	 <link rel="stylesheet" href="signup.css">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='HomePage.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='signup.css')}}">
 
 	<title></title>
 </head>
+
+
+
+
 <body>
 	 <header class="header">
   <div class="container-fluid">
