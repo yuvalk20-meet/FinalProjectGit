@@ -28,12 +28,12 @@ def Create_post():
 		maxi = request.form['max']
 
 		image = request.form['event']
-		add_event(username, image, des, time, loc, maxi)
+		add_event(event, image, des, time, loc, maxi, username)
 		user_ob = session.query(
        User).filter_by(
-       name=name).first()
+       name=username).first()
 		add_points(user_ob.user_id)
-		return render_template("Createpost.html", name = name, event = event)
+		return render_template("Createpost.html", name = username, event = event)
        
  
 ## LOGIN ROUTES###
@@ -44,6 +44,7 @@ def login():
 	user = check_username(request.form['name'])
 	if user != None and user.verify_password(request.form["password"]):
 		login_session['name'] = user.name
+		print(user.name)
 		login_session['logged_in'] = True
 		posts = query_all()
 		return render_template("HomePage.html", posts = posts)

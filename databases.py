@@ -8,7 +8,7 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def add_event(name, icon, des, time, loc, maxi):
+def add_event(name, icon, des, time, loc, maxi, org):
 	
 	eve = Event(
 		event=name,
@@ -16,7 +16,8 @@ def add_event(name, icon, des, time, loc, maxi):
 		description = des,
 		time = time,
 		maximum = maxi,
-		location = loc
+		location = loc,
+		organizer = org
 		)
 	session.add(eve)
 	session.commit()
@@ -37,7 +38,7 @@ def check_username(username):
 
 def addUser(username,password,age,number,gender,niborhood):
 
-    user=User(name=username,phone_number=number,gender=gender,neiborhood=niborhood)
+    user=User(name=username,phone_number=number,gender=gender,neiborhood=niborhood, points = 0)
     print(user)
     user.hash_password(password)
  
