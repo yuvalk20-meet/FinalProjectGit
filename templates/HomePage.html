@@ -112,7 +112,7 @@
 
         
 hello {{name}}, you have {{points}} points!
-	<a href="#contact-us" class="btn btn-green header__btn">
+p	<pa href="#contact-us" class="btn btn-green header__btn">
 		Get in Touch
 	</a>
 
@@ -131,6 +131,22 @@ hello {{name}}, you have {{points}} points!
 
   <div id="content">
     {{posts[0].organizer}}
+    {% for p in posts %}
+    <div class="postsdiv">
+      <h3 class="header3">A new event by {{username}}</h3>
+      <h3>{{p.event}}</h3>
+      <img class="images" src={{p.image}}>
+      <p>{{p.description}}</p>
+      <br>
+      <h3>Additional Information</h3>
+      <p>Maximum of memebers: {{p.maximum}}</p>
+      <p>When? {{p.time}}</p>
+      <p>Where? {{p.location}}</p>
+      <p>................................................</p>
+      {%endfor%}
+    </div>
+
+
   </div>
 
 

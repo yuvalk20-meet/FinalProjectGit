@@ -13,7 +13,9 @@ def home_page():
 
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
+	
 	username = login_session['name']
+	
 	if request.method == 'GET':
 		return render_template("Createpost.html",username=username) 
 	else:
@@ -26,12 +28,12 @@ def Create_post():
 		maxi = request.form['max']
 
 		image = request.form['event']
-		add_event(username, image, des, time, loc, maxi)
+		add_event(event, image, des, time, loc, maxi, username)
 		user_ob = session.query(
-       Student).filter_by(
-       name=name).first()
-		add_points()
-		return render_template("Createpost.html", name = name, event = event)
+       User).filter_by(
+       name=username).first()
+		add_points(user_ob.user_id)
+		return render_template("Createpost.html", name = username, event = event)
        
  
 ## LOGIN ROUTES###
@@ -42,8 +44,10 @@ def login():
 	user = check_username(request.form['name'])
 	if user != None and user.verify_password(request.form["password"]):
 		login_session['name'] = user.name
+		print(user.name)
 		login_session['logged_in'] = True
-		return render_template("HomePage.html")
+		posts = query_all()
+		return render_template("HomePage.html", posts = posts)
 	else:
 		return render_template("")
 
