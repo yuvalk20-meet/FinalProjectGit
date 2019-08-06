@@ -18,6 +18,8 @@ h1{
   box-sizing: border-box;
   margin:auto;
   border-radius: 25px;
+  background-color: grey;
+  opacity: 0.3;
 }
 .footer{
   position: absolute;

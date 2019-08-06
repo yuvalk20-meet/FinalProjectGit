@@ -12,7 +12,12 @@
   box-sizing: border-box;
   margin:auto;
   border-radius: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
+#box_1{
+	z-index: 5;
 }
 
 .footer{
