@@ -37,12 +37,24 @@
 #op1{
   opacity: 0.45;
 }
+#op1:hover{
+  opacity: 1;
+}
 #op2{
   opacity: 0.45;
+}
+#op2:active{
+  opacity: 1;
 }
 #op3{
   opacity: 0.45;
 }
+#op3:active{
+  opacity: 1;
+}
 #op4{
   opacity: 0.45;
+}
+#op4:active{
+  opacity: 1;
 }
