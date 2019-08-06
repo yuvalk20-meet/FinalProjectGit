@@ -1,0 +1,334 @@
+<!doctype html>
+
+<html lang="en-US" >
+  <head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='HomePage.css')}}">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/favicon.ico" />
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WPPRKFZ');</script>
+  <!-- End Google Tag Manager -->
+    <style type="text/css" id="aoatfcss" media="all">.wp-block-media-text .wp-block-media-text__media{grid-area:media-text-media;margin:0}.wp-block-media-text .wp-block-media-text__content{word-break:break-word;grid-area:media-text-content;padding:0 8%}:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar}@-ms-viewport{width:device-width}article,header,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}a:not([href]):not([tabindex]){color:inherit;text-decoration:none}img{vertical-align:middle;border-style:none}button{border-radius:0}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{padding:0;border-style:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}h1{font-size:2.5rem}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col-12,.col-lg-4,.col-lg-8,.col-md-10,.col-md-3,.col-md-6,.col-md-9{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.d-none{display:none!important}.d-block{display:block!important}.mfp-hide{display:none!important}button::-moz-focus-inner{padding:0;border:0}body{font-family:apercu,sans-serif;line-height:1.5;font-weight:500}img{max-width:100%;height:auto}ul{margin:0;padding:0}.container-fluid{padding-left:60px;padding-right:60px}@media (max-width:1199.98px){.container-fluid{padding-left:25px;padding-right:25px}}h1{font-weight:700}.main{position:relative}@font-face{font-family:apercu;src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-regular-pro.eot);src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-regular-pro.eot) format("embedded-opentype");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-regular-pro.woff2) format("woff2");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-regular-pro.woff) format("woff");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-regular-pro.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:apercu;src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-bold-pro.eot);src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-bold-pro.eot) format("embedded-opentype");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-bold-pro.woff2) format("woff2");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-bold-pro.woff) format("woff");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-bold-pro.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:apercu;src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-medium-pro.eot);src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-medium-pro.eot) format("embedded-opentype");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-medium-pro.woff2) format("woff2");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-medium-pro.woff) format("woff");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/apercu-medium-pro.ttf) format("truetype");font-weight:500;font-style:normal}@font-face{font-family:atlas-typewriter;src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/atlas-typewriter-regular.eot);src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/atlas-typewriter-regular.eot) format("embedded-opentype");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/atlas-typewriter-regular.ttf) format("truetype");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/atlas-typewriter-regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:atlas-typewriter;src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/71cec33cd01376e309e1078061faebf8.woff2) format("woff2");src:url(https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/dist/fonts/71cec33cd01376e309e1078061faebf8.woff) format("woff");font-weight:500;font-style:normal}.socials ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;list-style:none}.socials a{display:block;width:37px;height:37px}@media (max-width:1680px){.socials a{width:28px;height:28px}}@media (max-width:991.98px){.socials a{width:22px;height:22px}}@media (max-width:767.98px){.socials a{width:18px;height:18px}}.socials li+li{margin-left:20px}.socials-footer ul{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}@media (max-width:767.98px){.socials-footer ul{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}}.btn{padding:20px 35px;text-transform:uppercase;border-radius:0;font-weight:500}.btn-green{background-color:#019793;color:#fff;font-size:38px;letter-spacing:.034em}@media (max-width:1680px){.btn-green{padding:16px 30px;font-size:27px;letter-spacing:.02em}}@media (max-width:1199.98px){.btn-green{font-size:20px}}@media (max-width:991.98px){.btn-green{padding-left:23px;padding-right:23px;font-size:17px}}@media (max-width:767.98px){.btn-green{padding:15px 25px;font-size:17px}}.btn-nav{position:relative;-webkit-appearance:none;-moz-appearance:none;appearance:none;width:34px;z-index:15;height:16px;margin-left:-10px;margin-right:18px;background-color:transparent;border:0}.btn-nav span:after,.btn-nav:after,.btn-nav:before{position:absolute;left:0;width:100%;height:2px;background:#b7b7b7;content:''}.btn-nav span:after{top:0}.btn-nav:after{top:7px}.btn-nav:before{top:14px}.nav ul{list-style:none}.nav li{position:relative}.nav-main{color:#000}.nav-main a{position:relative;display:inline-block;padding-top:4px;padding-bottom:4px;font-size:1.82vw;letter-spacing:-.02em;color:inherit;text-decoration:none}.nav-main a:before{position:absolute;bottom:0;right:0;width:0;content:'';height:4px;background-color:#000}@media (max-width:1680px){.nav-main a{font-size:23px}}@media (max-width:1199.98px){.nav-main a{font-size:20px}}.nav-main .sub-menu{position:absolute;top:calc(100% + 17px);width:40vw;padding:10px 0;opacity:0;visibility:hidden;-webkit-transform:translateY(20px);-o-transform:translateY(20px);transform:translateY(20px)}@media (max-width:1680px){.nav-main .sub-menu{top:calc(100% + 14px)}}@media (max-width:991.98px){.nav-main .sub-menu{top:calc(100% + 8px)}}.nav-main .sub-menu li{margin-bottom:10px;color:#a7a9ac}.nav-main .sub-menu a:before{display:none}.nav-main .sub-menu:before{position:absolute;top:0;left:-100vw;right:-100vw;z-index:-1;min-height:100%;background-color:#fff;content:'';border-top:2px solid #ccc;border-bottom:2px solid #ccc}.nav-main .sub-menu:after{position:absolute;top:-20px;left:-100vw;right:-100vw;height:40px;content:'';z-index:1}.nav-main .menu{display:-webkit-box;display:-ms-flexbox;display:flex}.nav-main .menu>li{margin-right:3vw}@media (max-width:1680px){.nav-main .menu>li{margin-right:40px}}.nav-footer{color:#000}.nav-footer a{display:inline-block;font-family:atlas-typewriter,sans-serif;font-size:1.25vw;color:inherit;letter-spacing:-.045em;font-weight:400}@media (max-width:1680px){.nav-footer a{font-size:15px}}@media (max-width:767.98px){.nav-footer a{font-size:11px;color:#a7a9ac}}.nav-footer>ul{display:-webkit-box;display:-ms-flexbox;display:flex}@media (max-width:767.98px){.nav-footer>ul{-ms-flex-wrap:wrap;flex-wrap:wrap}.nav-footer>ul>li{-ms-flex-preferred-size:100%;flex-basis:100%}}@media (max-width:767.98px){.nav-footer>ul>li{margin-bottom:10px}}.nav-footer>ul>li li{margin-bottom:3px}@media (max-width:767.98px){.nav-footer>ul>li li{line-height:1.1}}.nav-footer>ul>li+li{margin-left:12.9vw}@media (max-width:991.98px){.nav-footer>ul>li+li{margin-left:8.9vw}}@media (max-width:767.98px){.nav-footer>ul>li+li{margin-left:0}}.nav-footer>ul>li>a{display:block;font-size:1.35vw;color:inherit;letter-spacing:-.02em;margin-bottom:0;font-family:apercu,sans-serif;font-weight:700}@media (max-width:1680px){.nav-footer>ul>li>a{font-size:17px}}@media (max-width:767.98px){.nav-footer>ul>li>a{margin-bottom:3px;color:#019793;font-size:14px;line-height:1}}.link-more{position:relative;display:inline-block;padding-top:10px;color:#f9b39f;text-transform:uppercase;font-family:atlas-typewriter,sans-serif;font-size:28px;font-weight:500;letter-spacing:-.02em}.link-more:before{position:absolute;top:0;left:0;width:70%;height:1px;background-color:#f9b39f;content:''}@media (max-width:1680px){.link-more{font-size:20px}}@media (max-width:991.98px){.link-more{font-size:15px}}@media (max-width:991.98px){.link-more{font-size:13px}}.header{position:fixed;top:0;left:0;right:0;z-index:999;padding:19px 0 17px;background-color:#fff;border-bottom:2px solid #ccc}.header .logo{display:inline-block;-webkit-box-flex:0;-ms-flex:0 0 10vw;flex:0 0 10vw;max-width:10vw;height:auto;margin-right:3.65vw}@media (max-width:1680px){.header .logo{-ms-flex-preferred-size:130px;flex-basis:130px;margin-right:46px}}@media (max-width:991.98px){.header .logo{-ms-flex-preferred-size:100px;flex-basis:100px;max-width:100px}}@media (max-width:767.98px){.header .logo{-ms-flex-preferred-size:65px;flex-basis:65px}}.header .header__inner{position:static;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header .header__btn{position:absolute;top:0;right:0;bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:20px 47px;font-size:38px}@media (max-width:1680px){.header .header__btn{padding-top:7px;padding-bottom:7px;font-size:25px}}@media (max-width:1680px){.header{padding:17px 0 14px}}@media (max-width:991.98px){.header{padding:12px 0 8px}.header .header__btn{padding-left:25px;padding-right:25px;font-size:17px}}@media (max-width:767.98px){.header{padding-top:12px;padding-bottom:14px}.header .header__btn{font-size:17px}.header .header__main{position:absolute;top:calc(100% + 2px);left:0;right:0;min-height:calc(100vh - 58px);padding:30px 25px;background-color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;visibility:hidden;opacity:0}.header .header__main .socials{padding-bottom:55px}.header .header__main .nav{position:relative;padding-bottom:30px;margin-bottom:30px}.header .header__main .nav:before{position:absolute;bottom:0;left:-25px;right:-25px;height:1px;background-color:#a7a9ac;content:''}.header .header__main .nav a{font-size:25px}.header .header__main .nav .menu{-ms-flex-wrap:wrap;flex-wrap:wrap}.header .header__main .nav .menu>*{-webkit-box-flex:1;-ms-flex:1 1 100%;flex:1 1 100%;margin-bottom:8px}.header .header__main .nav .sub-menu{position:static;padding:20px 20px 0;width:100%;visibility:visible;opacity:1;-webkit-transform:none;-o-transform:none;transform:none;display:none}.header .header__main .nav .sub-menu:after,.header .header__main .nav .sub-menu:before{display:none}.header .header__main .nav .sub-menu a{padding-bottom:0}}.footer .footer__inner{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.wrapper{overflow:hidden}.wrapper .wrapper__body{position:relative;z-index:10}.section{padding:60px 0;background-color:#fff}@media (max-width:767.98px){.section .section__head{padding:0 0 50px}}.section .section__title{font-size:5.31vw;color:#010101;line-height:1;letter-spacing:-.017em}@media (max-width:1680px){.section .section__title{font-size:72px;letter-spacing:-.026em}}@media (max-width:1199.98px){.section .section__title{font-size:60px}}@media (max-width:991.98px){.section .section__title{font-size:46px}}@media (max-width:767.98px){.section .section__title{font-size:39px}}@media (max-width:1199.98px){.section{padding-top:30px;padding-bottom:30px}}.section-hero{position:relative;padding-bottom:8.5vw;padding-top:3.7vw;overflow:hidden}.section-hero:before{position:absolute;top:0;left:50%;right:0;bottom:0;z-index:0;width:100vw;height:100vw;border:8px solid #a6e3ff;border-radius:50%;-webkit-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);content:''}.section-hero .container-fluid{position:relative;z-index:12}.section-hero .section__title{margin-bottom:97px;font-size:120px;letter-spacing:-.015em}@media (max-width:1680px){.section-hero .section__title{margin-bottom:60px;font-size:72px}}@media (max-width:1199.98px){.section-hero .section__title{font-size:60px}}@media (max-width:991.98px){.section-hero .section__title{font-size:46px}}@media (max-width:767.98px){.section-hero .section__title{margin-bottom:15px;font-size:39px;line-height:1.15;letter-spacing:-.02em}}.section-hero .section__body{position:relative;margin-left:-60px;margin-right:-60px}@media (max-width:1680px){.section-hero .section__body{margin-right:0}}@media (max-width:991.98px){.section-hero .section__body{margin-left:-25px;margin-right:-25px}}.section-hero .section__entry{padding-left:6.5vw;padding-right:6.5vw}@media (max-width:1680px){.section-hero .section__entry{padding-left:80px;padding-right:32px}}@media (max-width:991.98px){.section-hero .section__entry{padding-left:30px}}.section-hero .section__image{padding-left:0;padding-right:0}.section-hero .section__image img{width:100%}.section-hero .article{margin-top:-10px}.section-hero .article p{font-family:apercu,sans-serif;font-size:38px;color:#000;font-weight:700;line-height:1.42;letter-spacing:-.02em}@media (max-width:1680px){.section-hero .article{margin-top:0}.section-hero .article p{font-size:27px}}@media (max-width:1199.98px){.section-hero .article p{font-size:20px}}@media (max-width:991.98px){.section-hero .article p{font-size:17px}}@media (max-width:767.98px){.section-hero{overflow:hidden;padding-top:50px;padding-bottom:50px}.section-hero:before{top:0;left:50%;width:530px;height:530px;border-width:3px}.section-hero .section__head{padding-bottom:5px}.section-hero .section__image{border-top:3px solid #00ffbd;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;padding:0;margin-left:-15px;margin-right:-15px;width:calc(100% + 30px);margin-top:19px}.section-hero .section__entry{padding:0 25px 0;padding-bottom:50px}.section-hero .article p{margin-bottom:18px;font-size:16px;line-height:1.35;letter-spacing:.003em}}.section-hero .line{position:absolute;display:block;content:''}.section-hero .line--sm.line--right{top:0;right:345px;bottom:0;width:2px}@media (max-width:991.98px){.section-hero .line--sm.line--right{right:100px}}@media (max-width:767.98px){.section-hero .line--sm.line--right{right:25px;background-color:#b3fb71!important}}.section-hero .line--sm.line--right-alt{top:0;right:69px;bottom:0;width:2px}.section-hero .line--left.line--lg{top:0;left:444px;bottom:0;width:8px;z-index:5}@media (max-width:1199.98px){.section-hero .line--left.line--lg{left:250px}}.section-hero .line--bottom.line--sm{left:0;right:0;bottom:7.08vw;height:2px}.section-hero .line--bottom-alt.line--sm{height:8.5vw;left:56.73vw;bottom:0;right:auto;width:2px}@media (max-width:1680px){.section-hero .line--bottom-alt.line--sm{left:calc(58.33333% - 26px)}}@media (max-width:1199.98px){.section-hero .line--bottom-alt.line--sm{left:calc(58.33333% - 5px)}}@media (max-width:767.98px){.section-hero .line--bottom.line--sm{top:126vw;left:-25px;right:-25px;height:4px;background-color:#ffb8a6!important}.section-hero .line--left.line--lg,.section-hero .line--right-alt.line--sm{display:none}}.section-info .section__head .section__image{padding-left:12vw;margin-right:-60px}@media (max-width:1680px){.section-info .section__head .section__image{padding-left:160px}}@media (max-width:1199.98px){.section-info .section__head .section__image{padding-left:100px}}@media (max-width:991.98px){.section-info .section__head .section__image{margin-right:-25px;padding-left:50px}}.popup-apply{background:#eee;padding:30px}.article{color:#000}.article p{margin-bottom:1.3vw;font-size:28px;line-height:1.75;font-weight:400;letter-spacing:-.071em}@media (max-width:1680px){.article p{font-size:20px}}@media (max-width:991.98px){.article p{margin-bottom:20px}}.header__btn{background-color:#000;color:#fff}.section-hero .link-more{color:#0a0504}.section-hero .link-more:before{background-color:#0a0504}</style><link rel="preload" as="style" media="all" href="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/css/autoptimize_bd92458ef1f76de16814bc0155e2ea1c.css" onload="this.onload=null;this.rel='stylesheet'" /><noscript id="aonoscrcss"><link type="text/css" media="all" href="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/css/autoptimize_bd92458ef1f76de16814bc0155e2ea1c.css" rel="stylesheet" /></noscript><title>Homepage - Venn City</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.venn.city/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Venn City - New Way of Neighboring" />
+<meta property="og:description" content="Venn is creating a neighborhood-wide network through homes and shared spaces" />
+<meta property="og:url" content="https://www.venn.city/" />
+<meta property="og:site_name" content="Venn City" />
+<meta property="og:image" content="https://www.venn.city/wp-content/uploads/2019/06/VENN_ROOFTOP_091.jpg" />
+<meta property="og:image:secure_url" content="https://www.venn.city/wp-content/uploads/2019/06/VENN_ROOFTOP_091.jpg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="853" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Venn is creating a neighborhood-wide network through homes and shared spaces" />
+<meta name="twitter:title" c=ontent="Venn City - New Way of Neighboring" />
+<meta name="twitter:image" content="https://www.venn.city/wp-content/uploads/2019/06/VENN_ROOFTOP_091.jpg" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.venn.city/#website","url":"https://www.venn.city/","name":"Venn City","potentialAction":{"@type":"SearchAction","target":"https://www.venn.city/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.venn.city/#webpage","url":"https://www.venn.city/","inLanguage":"en-US","name":"Homepage - Venn City","isPartOf":{"@id":"https://www.venn.city/#website"},"datePublished":"2019-06-15T08:48:30+00:00","dateModified":"2019-07-02T20:08:00+00:00"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.venn.city\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		
+	
+
+<script type='text/javascript' src='https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+
+<link rel='https://api.w.org/' href='https://www.venn.city/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.venn.city/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.venn.city/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://www.venn.city/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.venn.city/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.venn.city%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.venn.city/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.venn.city%2F&#038;format=xml" />
+		
+		</head>
+  <body class="home page-template-default page page-id-100 color-template- app-data index-data singular-data page-data page-100-data page-homepage-data front-page-data">
+      <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPPRKFZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+      <div class="wrapper">
+            <header class="header">
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="header__inner col-12">
+
+                  <button class="btn-nav d-block d-md-none">
+            <span></span>
+          </button>
+        
+                  <a class="logo" href="https://www.venn.city/">
+            <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/logo.svg" alt="logo" /></noscript><img class="lazyload" src='venncitylogo.svg' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/logo.svg" alt="logo" />
+          </a>
+        
+        <div class="header__main">
+          <nav class="nav nav-main">
+
+              <div class="menu-header-menu-container">
+                <ul id="menu-header-menu" class="menu">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192"><a href="login.html">Login</a>
+                  </a>
+                </li>
+<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="https://www.venn.city/about/">About</a></li>
+</ul></div>
+            </nav><!-- /.nav-main -->
+
+                          <div class="socials socials--header d-block d-md-none">
+                  <ul>
+					<li>
+				<a href="https://il.linkedin.com/company/venn-city" target="_blank">
+					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin">
+				</a>
+			</li>
+					<li>
+				<a href="https://www.facebook.com/vennbrooklyn/" target="_blank">
+					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook">
+				</a>
+			</li>
+					<li>
+				<a href="https://www.instagram.com/venn.bushwick/" target="_blank">
+					<noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram">
+				</a>
+			</li>
+			</ul>
+              </div><!-- /.socials socials--header -->
+                              </div><!-- /.header__main -->
+
+        
+ 
+	<pa href="#contact-us" class="btn btn-green header__btn">
+		Get in Touch
+	</a>
+
+
+      </div><!-- /.header__inner col-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</header><!-- /.header -->
+
+<div id="allcontent">
+  <div id = backimg>
+    <img class="layers" src="../static/Images/layer1.png">
+    <img class="layers" src="../static/Images/layer2.png">
+    <img class="layers" src="../static/Images/layer3.png"> 
+  </div>
+ 
+
+
+  </div>
+
+
+
+
+</div>
+
+
+<footer class="footer">
+  <div class="container-fluid d-none d-md-block">
+    <div class="row no-gutters footer__inner">
+      <div class="col-md-9 col-lg-8">
+
+        
+          <nav class="nav nav-footer">
+            <ul>
+                              <li>
+                  <a>Locations</a><ul id="menu-locations" class="sub-menu"><li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://www.venn.city/bushwick/">Brooklyn</a></li>
+<li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a target="_blank" rel="noopener noreferrer" href="https://de.venn.city/">Berlin</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="https://il.venn.city/">Tel Aviv</a></li>
+</ul>               </li>
+                              <li>
+                  <a>Get In Touch</a><ul id="menu-get-in-touch" class="sub-menu"><li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#contact-us">Contact Us</a></li>
+<li id="menu-item-133" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-133"><a target="_blank" rel="noopener noreferrer" href="https://boards.greenhouse.io/venn">Work With Us</a></li>
+</ul>               </li>
+                              <li>
+                  <a>About</a><ul id="menu-about" class="sub-menu"><li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://www.venn.city/about/">Our Story</a></li>
+<li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127"><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1rTSUBP7HVPVtBzRJ-z7S7LW0ZKnQXRCt/view?usp=sharing">Impact Report</a></li>
+<li id="menu-item-128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-128"><a target="_blank" rel="noopener noreferrer" href="http://online.fliphtml5.com/wdwx/qcok/">Venn Vision Book</a></li>
+</ul>               </li>
+                          </ul>
+          </nav><!-- /.nav-footer -->
+              </div><!-- /.col-md-9 col-lg-8 -->
+
+              <div class="col-md-3 col-lg-4">
+          <div class="socials socials-footer">
+            <ul>
+          <li>
+        <a href="https://il.linkedin.com/company/venn-city" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.facebook.com/vennbrooklyn/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.instagram.com/venn.bushwick/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram">
+        </a>
+      </li>
+      </ul>
+          </div><!-- /.socials socials-footer -->
+        </div><!-- /.col-md-3 col-lg-4 -->
+          </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+
+  <div class="footer__mobile d-block d-md-none">
+    <div class="container-fluid">
+      <div class="row">
+                  <div class="col-6">
+            <nav class="nav nav-footer">
+              <ul>
+                                  <li>
+                    <a>Locations</a><ul id="menu-locations-1" class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://www.venn.city/bushwick/">Brooklyn</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a target="_blank" rel="noopener noreferrer" href="https://de.venn.city/">Berlin</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="https://il.venn.city/">Tel Aviv</a></li>
+</ul>                 </li>
+
+                                                    <li>
+                    <a>Get In Touch</a><ul id="menu-get-in-touch-1" class="sub-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#contact-us">Contact Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-133"><a target="_blank" rel="noopener noreferrer" href="https://boards.greenhouse.io/venn">Work With Us</a></li>
+</ul>                 </li>
+
+                                      </ul>
+                    </nav><!-- /.nav-footer -->
+                    </div><!-- /.col-6 -->
+                    <div class="col-6">
+                    <nav class="nav nav-footer">
+                    <ul>
+                                                    <li>
+                    <a>About</a><ul id="menu-about-1" class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://www.venn.city/about/">Our Story</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127"><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1rTSUBP7HVPVtBzRJ-z7S7LW0ZKnQXRCt/view?usp=sharing">Impact Report</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-128"><a target="_blank" rel="noopener noreferrer" href="http://online.fliphtml5.com/wdwx/qcok/">Venn Vision Book</a></li>
+</ul>                 </li>
+
+                                                </ul>
+            </nav><!-- /.nav nav-footer -->
+
+                          <div class="socials socials-footer">
+                <ul>
+          <li>
+        <a href="https://il.linkedin.com/company/venn-city" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-linkedin.png" alt="linkedin">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.facebook.com/vennbrooklyn/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-facebook.png" alt="facebook">
+        </a>
+      </li>
+          <li>
+        <a href="https://www.instagram.com/venn.bushwick/" target="_blank">
+          <noscript><img src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram"></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/themes/venn/resources/assets/images/icons/ico-instagram.png" alt="instagram">
+        </a>
+      </li>
+      </ul>
+              </div><!-- /.socials socials-footer -->
+                      </div><!-- /.col-6 -->
+              </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div><!-- /.footer__mobile -->
+</footer><!-- /.footer -->
+
+      <div id="book-a-tour" class="zoom-anim-dialog mfp-hide popup-apply">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Book a Tour</h1>
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+portalId: "4784699",
+formId: "96991d4c-1015-4186-9864-3d291777cd7d",
+onFormSubmit: function ($form) {
+    window.dataLayer.push({
+      'event': 'lead generated',
+      'formSubmitted': 'book-a-tour'
+    });
+  }
+});
+</script>
+      </div><!-- /.col-10 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.shell -->
+
+</div><!-- /#test-popup -->     <div id="contact-us" class="zoom-anim-dialog mfp-hide popup-apply">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Contact Us</h1>
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+portalId: "4784699",
+formId: "a7ceca41-991b-4c13-9a69-bda99965a33f",
+onFormSubmit: function ($form) {
+    window.dataLayer.push({
+      'event': 'lead generated',
+      'formSubmitted': 'contact-us'
+    });
+  }
+});
+</script>
+
+      </div><!-- /.col-10 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.shell -->
+
+</div><!-- /#test-popup -->     <div id="join-us" class="zoom-anim-dialog mfp-hide popup-apply">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Join us</h1>
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+portalId: "4784699",
+formId: "96991d4c-1015-4186-9864-3d291777cd7d",
+onFormSubmit: function ($form) {
+    window.dataLayer.push({
+      'event': 'lead generated',
+      'formSubmitted': 'join-us'
+    });
+  }
+});
+</script>
+      </div><!-- /.col-10 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.shell -->
+
+</div><!-- /#test-popup -->       <noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src='https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script><script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyApF3C8L177YJW7OoRTzPcksTEKaOgbPSA&#038;ver=5.2.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var themeGlobal = {"popup_ids":["book-a-tour","contact-us","join-us"],"resources_path":"https:\/\/www.venn.city\/wp-content\/themes\/venn\/resources\/"};
+/* ]]> */
+</script>
+
+
+    </div><!-- /.wrapper -->
+  <script type="text/javascript" defer src="https://39q77k1dd7472q159r3hoq5p-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_1dd49251504fff73e97674f941b5d847.js"></script><script data-cfasync='false'>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){function e(){t.media=a}var a=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script></body>
+</html>    
