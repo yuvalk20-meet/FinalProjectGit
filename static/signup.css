@@ -6,15 +6,12 @@
 	transform: translateX(-50%);
 	display: block;
   width: 400px;
-  height: 605px;
+  height: 615px;
   border: 5px solid yellow;
   padding-left: 50px;
   box-sizing: border-box;
   margin:auto;
   border-radius: 25px;
-}
-.h1{
-	
 }
 
 .footer{
@@ -38,14 +35,14 @@
   width: 100%;
 }
 #op1{
-  opacity: 0.5;
+  opacity: 0.45;
 }
 #op2{
-  opacity: 0.5;
+  opacity: 0.45;
 }
 #op3{
-  opacity: 0.5;
+  opacity: 0.45;
 }
 #op4{
-  opacity: 0.5;
+  opacity: 0.45;
 }
