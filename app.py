@@ -2,7 +2,7 @@
 from databases import *
 from flask import Flask, render_template, request, url_for
 from flask import session as login_session
-
+ 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = ' you-will-never-guess'
 
@@ -15,9 +15,9 @@ def home_page():
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
 	
-	username = login_session['name']
+	username =login_session['name']
 	
-	if request.method == 'GET':
+	if request.method=='GET':
 		return render_template("Createpost.html",username=username) 
 	else:
 		
@@ -30,13 +30,11 @@ def Create_post():
 
 		image = request.form['event']
 		add_event(event, image, des, time, loc, maxi, username)
-		user_ob = session.query(
-       User).filter_by(
-       name=username).first()
+		user_ob = session.query(User).filter_by(name=username).first()
 		add_points(user_ob.user_id)
 		posts = query_all()
 		posts = posts[::-1]
-		return render_template("HomePage.html", name = username, event = event, posts = posts, user_id = user_ob.user_id)
+		return render_template("HomePage.html", name=username, event = event, posts = posts, user_id = user_ob.user_id)
        
  
 ## LOGIN ROUTES###
