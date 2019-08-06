@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = ' you-will-never-guess'
 def home_page():
 	posts = query_all()
 	posts = posts[::-1]
-	return render_template("HomePage1.html", posts = posts )
+	return render_template("HomePage.html", posts = posts )
 
 @app.route('/post', methods=['GET', 'POST'])
 def Create_post():
