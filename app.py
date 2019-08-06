@@ -36,7 +36,7 @@ def Create_post():
 		add_points(user_ob.user_id)
 		posts = query_all()
 		posts = posts[::-1]
-		return render_template("HomePage.html", name = username, event = event, posts = posts)
+		return render_template("HomePage.html", name = username, event = event, posts = posts, user_id = user_ob.user_id)
        
  
 ## LOGIN ROUTES###
