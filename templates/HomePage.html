@@ -85,7 +85,7 @@
                 <ul id="menu-header-menu" class="menu">
                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192"><a href="/login">Login</a>
                   </a>
-                  <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192"><a href="/signup">SignUp</a>
+                  <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192"><a href="/post">Create</a>
                     </a>
 
 
@@ -127,21 +127,30 @@ hello {{name}}, you have {{points}} points!
   </div><!-- /.container-fluid -->
 </header><!-- /.header -->
 
-<!-- <div id="allcontent">
+<div id="allcontent">
   <div id = backimg>
     <img class="layers" src="../static/Images/layer1.png">
     <img class="layers" src="../static/Images/layer2.png">
     <img class="layers" src="../static/Images/layer3.png"> 
-  </div> -->
+  </div>
+
+<div id="parallax1" style="z-index: -1">
+
+<h1 style="text-align: center; color: rgba(255, 255, 255, 0.5);">
+  Events:
+</h1></div>
+
+  <div style="height:100px;font-size:36px; z-index: 6; color: blue;">
+   
+  </div>
 
   <div id="content">
-    
     {% for p in posts %}
 
-    <div class="postsdiv" >
-      <div id="mergindiv">
+    <div class="postsdiv" style="z-index: 1; background-color: rgba(255,255,255,0.7); border-radius: 25px;">
+      <div id="mergindiv" style="z-index: 5">
       <h3 class="header3" style="color: lightblue">A new event by {{p.organizer}}</h3> 
-      <h3>{{p.event}}</h3>
+      <h3 class="textwhite">{{p.event}}</h3>
       <img class="images" src={{p.image}}>
       <p>{{p.description}}</p>
       <h5>Additional Information</h5>
