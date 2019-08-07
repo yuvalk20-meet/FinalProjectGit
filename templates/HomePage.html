@@ -137,9 +137,10 @@ hello {{name}}, you have {{points}} points!
   <div id="content">
     
     {% for p in posts %}
+
     <div class="postsdiv" >
       <div id="mergindiv">
-      <h3 class="header3" style="color: lightblue">A new event by {{p.organizer}}</h3>
+      <h3 class="header3" style="color: lightblue">A new event by {{p.organizer}}</h3> 
       <h3>{{p.event}}</h3>
       <img class="images" src={{p.image}}>
       <p>{{p.description}}</p>

@@ -124,7 +124,8 @@ p	<pa href="#contact-us" class="btn btn-green header__btn">
     </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 </header><!-- /.header -->
-	<div id="div1">
+	<div id="div1" style="z-index: 1; background-color: rgba(0, 0, 0, 0.5);">
+    <div id="div2" style="z-index: 5;">
 	<h1 style="color: white;">Sign Up</h1>
 	<form action="/signup" method="post"><br>
 		<input  id="op4" type="text" name="userName" placeholder="Enter new username">
@@ -140,7 +141,7 @@ p	<pa href="#contact-us" class="btn btn-green header__btn">
 		<input type="radio" name="gender" value="male"><p style="color: white; display: inline;">male</p>
 		<input type="radio" name="gender" value="other"><p style="color: white; display: inline;">other</p>
 	</br><br>
-	<h3 style="color: white">Choose your neiborhood</h3>
+	<h3 style="color: white">Choose your neighborhood</h3>
 		<input type="radio" name="neiborhood" value="Tel-Aviv" ><p style="color: white; display: inline;">Tel-Aviv</p>
 		<input type="radio" name="neiborhood" value="Brooklyn" ><p style="color: white; display: inline;">Brooklyn</p>
 		<input type="radio" name="neiborhood" value="Berlin" ><p style="color: white; display: inline;">Berlin</p>
@@ -152,9 +153,10 @@ p	<pa href="#contact-us" class="btn btn-green header__btn">
 		<input type="Submit" name="submit" placeholder="submit">
 		</br>
 
-	</div>
 
 	</form>
+  </div>
+  </div>
 
 	<footer class="footer">
   <div class="container-fluid d-none d-md-block">

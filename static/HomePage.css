@@ -55,10 +55,9 @@
 	transform: translateX(-50%);
 	display: block;
 	width: 400px;
-	height: 615px;
+	height: 450px;
 	border: 5px solid yellow;
-	padding-left: 50px;
 	box-sizing: border-box;
-	margin:auto;
+	margin: 50px auto;
 	border-radius: 25px;
 }

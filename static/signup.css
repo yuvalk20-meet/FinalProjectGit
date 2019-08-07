@@ -58,3 +58,6 @@
 #op4:active{
   opacity: 1;
 }
+#div2{
+    z-index: 5;
+}
