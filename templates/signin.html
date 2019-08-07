@@ -5,7 +5,9 @@
 	<title></title>
 </head>
 <body>
-	<div id="div1">
+	<div id="div1" style="z-index: 1; background-color: rgba(0, 0, 0, 0.5);">
+		<div id="div2" style="z-index: 5;">
+
 	<h1>sign in</h1>
 	<form action="/signin" method="post"><br>
 		<input type="text" name="userName" placeholder="Enter new username">
@@ -26,13 +28,11 @@
 		<input type="radio" name="neiborhood" value="Brooklyn" >Brooklyn
 		<input type="radio" name="neiborhood" value="Berlin" >Berlin
 		</br>
-		<br>
 
-
-		</br>
 		<br>
 		<input type="Submit" name="submit" placeholder="submit">
 		</br>
+		</div>
 
 	</div>
 

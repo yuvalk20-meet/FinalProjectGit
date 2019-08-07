@@ -127,18 +127,19 @@ hello {{name}}, you have {{points}} points!
   </div><!-- /.container-fluid -->
 </header><!-- /.header -->
 
-<div id="allcontent">
+<!-- <div id="allcontent">
   <div id = backimg>
     <img class="layers" src="../static/Images/layer1.png">
     <img class="layers" src="../static/Images/layer2.png">
     <img class="layers" src="../static/Images/layer3.png"> 
-  </div>
+  </div> -->
 
   <div id="content">
     
     {% for p in posts %}
-    <div class="postsdiv" style="background-color:#87CEFA; ">
-      <h3 class="header3">A new event by {{p.organizer}}</h3>
+    <div class="postsdiv" >
+      <div id="mergindiv">
+      <h3 class="header3" style="color: lightblue">A new event by {{p.organizer}}</h3>
       <h3>{{p.event}}</h3>
       <img class="images" src={{p.image}}>
       <p>{{p.description}}</p>
@@ -146,10 +147,11 @@ hello {{name}}, you have {{points}} points!
       <h5>Maximum of memebers: {{p.maximum}}</h5>
       <h5>When? {{p.time}}</h5>
       <h5>Where? {{p.location}}</h5>
-      <button id="bt" style="background-color:green; color: white;" onclick="alert('Event ID: ' + '{{p.event_id}}' + '{{user_id}}')">+ Join</button>
+      <button id="bt" style=" color: white; font-size: 25px; font-weight: 900;" onclick="alert('Event ID: ' + '{{p.event_id}}' + '{{user_id}}')">+ Join</button>
       <h1 id="hea"></h1>
       
       {%endfor%}
+    </div>
     </div>
   </div>
 
