@@ -117,9 +117,10 @@ p	<pa href="#contact-us" class="btn btn-green header__btn">
     </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 </header><!-- /.header -->
-	<img id="bgImg2" src="../static/Images/create_img.jpeg">
-<div id="post">
-	<h3 style="font-size: 36px">{{username}}</h3>
+	<img id="bgImg2" src="../static/Images/create_image2.jpeg">
+<div id="post" style="z-index: 1; background-color: rgba(0,0,0,0.7);">
+  <div id="post_1" style="z-index: 5">
+	<h3 style="font-size: 36px; color: #F0F8FF" >{{username}}</h3>
 	<form action="/post" method="post">
 		 
 		 <input class = "inpu" type="text" name="eventname" placeholder="Event name"> 
@@ -150,12 +151,13 @@ p	<pa href="#contact-us" class="btn btn-green header__btn">
 		 <input class = "inpu" type="text" name="max" placeholder="Maximum Of Members">
 		 <br>
 		 <br>
-		 <textarea class = "inpu" rows = "5" cols = "60" name = "description">
-            Enter Description here...
+		 <textarea class = "inpu" rows = "5" cols = "60" name = "description" placeholder="Enter description here...">
+           
          </textarea><br>
 		 <input type="submit" value="Submit">
 
 	</form>
+</div>
 </div>
 
 
