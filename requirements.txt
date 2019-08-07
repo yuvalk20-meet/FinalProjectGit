@@ -14,7 +14,6 @@ decorator==4.3.0
 entrypoints==0.2.3
 enum34==1.1.6
 Flask==1.0.2
-futures==3.2.0
 gyp==0.1
 html5lib==0.999999999
 idna==2.6
