@@ -14,3 +14,4 @@ Werkzeug==0.14.1
 wheel==0.24.0
 SQLAlchemy==1.2.9
 Flask-Login==0.4.1
+passlib==1.7.1
